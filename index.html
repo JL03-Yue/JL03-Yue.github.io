@@ -1,7 +1,128 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Self Introduction</title>
+    <link rel="stylesheet" type="text/css" href="selfPage.css">
+
+    <style type="text/css">
+        @keyframes scroll {
+			0% {background-position: 0 0;}
+			100% {background-position: 100vw 0;}
+        }      
+       
+
+        @keyframes rot {
+			0% {transform: rotate(0deg)}
+			50% {transform: rotate(-180deg);}
+			100% {transform: rotate(-360deg);}
+        }
+
+        h3.number{
+            font-family: serif;
+        }
+        
+        h3.smalltitle{
+            font-family:'Courier New', Courier, monospace"
+        }
+
+        h4.mainbody{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        hr.pinkline{ 
+            width:750px;
+            color: plum;
+        }
+        button {
+			width: 100px;
+			font-size: 16px;
+			border-radius: 10px;
+			padding: 10px;
+			background-color:peachpuff;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #7ccff0;
+		}
+        
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+   <center>
+       
+        <h1 style="font-family: cursive;">Jing</h1>
+    
+        <h4 style="font-family: 'Courier New', Courier, monospace;">
+            Dancing/Travelling/Exploring/Have fun
+        </h4>
+       
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571429349264&di=030f75bf8344c4692000350cebfc9549&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201612%2F04%2F20161204215147_yXFnm.jpeg" height="200"; width="200"; alt="Headshot">
+
+        <hr class="pinkline"/><br/>
+
+        <h3 class="number">01 </h3>
+        <h3 class="smalltitle">
+                Dancing<br/>
+        </h3>
+ 
+        <img src="W1 Dance.jpg" height="200">
+        <h4 class="mainbody">
+                Chinese Cultural Dance<br/>UCLA CCDC<br/>
+        </h4>
+
+        <hr class="pinkline"/><br/>
+
+        <h3 class="number">02 </h3>
+        <h3 class="smalltitle">
+                    Travelling<br/>
+        </h3>
+
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571432669641&di=2ebcaa8c081f26688e562cce6ea8d595&imgtype=0&src=http%3A%2F%2Fpic.qqtn.com%2Fup%2F2018-2%2F2018020914012539730.jpg" height="200">
+
+        <h4 class="mainbody">
+                Inner Mongolia<br/>Szechuan<br/>Taipei<br/>Hongkong<br/>Japan<br/>Switzerland<br/>Paris<br/>Venice<br/>London<br/>
+        </h4>
+
+        <hr class="pinkline"/><br/>
+
+        <h3 class="number">03 </h3>
+        <h3 class="smalltitle">
+                Exploring<br/>
+        </h3>
+
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571432889185&di=465a62886f0bcc0639121f7837273754&imgtype=0&src=http%3A%2F%2Fpic.qqtn.com%2Fup%2F2019-9%2F15688885641077558.jpg" height="200"; alt="Sleeping Owl">
+
+        <h4 class="mainbody">
+                Computer Science<br/>Finance<br/>Mathematics<br/>
+        
+            </h4>
+        <hr class="pinkline"/><br/>
+
+        <h3 class="number">04 </h3>
+        <h3 class="smalltitle">
+                    Have fun<br/>
+        </h3>
+
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571433166748&di=d1650b4ff232ef7067b1463de364f994&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201807%2F25%2F20180725220505_curke.jpeg" alt="Flying bee"; height="200">
+
+        <h4 class="mainbody">
+                Eating<br/>Harry Potter<br/>Movies<br/>TV shows<br/>
+        </h4>
+
+        <hr class="pinkline"/>
+        <h1 style="font-size: medium;"> <font family="serif"></font>Subscribe to my website!</h1>
+
+        <div class="form">
+                <input id="email" type="email" placeholder="Email">
+                <button id="submit">Submit</button>
+            </div>
+            <script>
+                document.getElementById('submit').onclick = () => {
+                    document.getElementById('email').value = "";
+                    alert('Welcome!');
+                };
+            </script>
+   </center>
+    
 </body>
 </html>
