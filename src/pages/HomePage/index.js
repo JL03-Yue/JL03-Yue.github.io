@@ -22,7 +22,7 @@ export default ()=>{
                 Love to dance
                 </li>
             </ul>
-            <p>Hi! Nice to meet you!</p>
+            
             
         </section>
 

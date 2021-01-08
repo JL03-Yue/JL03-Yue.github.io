@@ -3,6 +3,7 @@ import styles from './about.module.scss';
 import left from '../../assets/images/left1.jpg';
 import Hobbies from '../../components/hobbies';
 import datas from './hobby.json';
+import Masthead from '../../components/masthead'
 
 export default ()=>{
     return <div className ={styles.wrap}>
@@ -15,9 +16,10 @@ export default ()=>{
         {/*照片 */}
         <section className = {styles.photo}>
             <div className={styles.sqr}>
-                  <img src={left } />
+                  <img className={styles.left} src={left } />
                   <h3>Annie Li</h3>  
-                      
+                <Masthead/>
+
             </div>
 
         </section>
