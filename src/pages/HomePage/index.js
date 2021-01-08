@@ -2,13 +2,13 @@ import React, { Component} from 'react';
 import WorkList from '../../components/WorkList';
 import styles from './home.module.scss'
 import worksData from '../WorkPageDetail/works.json'
-
+import half from '../../assets/images/half2.jpg'
 
 export default ()=>{
     return <div className={styles.wrap}>
         {/*个人简介 */}
         <section className = {styles.brief}>
-            <img src="https://github.com/JL03-Yue/JL03-Yue.github.io/blob/master/half.jpg"/>
+            <img src={half}/>
             <h2>Annie Li</h2>
             <ul>
                 <li>
