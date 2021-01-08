@@ -3,6 +3,7 @@ import WorkList from '../../components/WorkList';
 import styles from './home.module.scss'
 import worksData from '../WorkPageDetail/works.json'
 import half from '../../assets/images/half2.jpg'
+import Masthead from '../../components/masthead'
 
 export default ()=>{
     return <div className={styles.wrap}>
@@ -25,7 +26,12 @@ export default ()=>{
             
         </section>
 
+        {/*链接 */}
+        <section className={styles.masthead}>
+            
+            <Masthead/>
 
+        </section>
 
 
          {/**关于我 */}
@@ -39,7 +45,7 @@ export default ()=>{
             
         </section>
 
-        
+
         {/*作品 */}
         <section className={styles.work}>
             <div  className={styles.title}>
