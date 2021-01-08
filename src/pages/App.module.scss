@@ -15,7 +15,9 @@
       color: #333!important;
       padding-bottom: 5px;
       border-bottom: 1.5px solid #333; /*下划线*/
+      
     }
+
     .box{
       width: 70%;
       height: 100%;
@@ -26,23 +28,30 @@
       justify-content: space-between;
       a:hover { 
         text-decoration:none; 
+        
       }
       .boxleft{
         font-size: 20px;
-        color: rgb(51, 51, 51);
+        color: rgb(43, 42, 42);
+        
       }
       .boxleft::after {
         content: "◦◦◦";
         margin-left: 0.5em;
+        
       }
       .boxright{
         display: inline-flex;
         justify-content: flex-start;
+        :hover{
+          color:lightgrey;
+        }
         p{
           margin: 0px 10px;
           font-size: 14px;
           color: rgb(102, 102, 102);
         }
+
       }
       div{
         cursor: pointer;
@@ -56,6 +65,7 @@
     color: #555555;
     background: #fafafa;
     border-top:1px solid #f2f2f2;
+   
     p{
       padding:2px 0px;
     }

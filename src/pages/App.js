@@ -5,6 +5,7 @@ import HomePage from './HomePage'
 import WorkPage from './WorkPage'
 import WorkPageDetail from './WorkPageDetail'
 import AboutPage from './aboutpage'
+import PhotoPage from './photopage'
 
 
 class App extends Component {
@@ -18,10 +19,11 @@ class App extends Component {
         {/*头部 */}
         <header className={styles.header}>
         <div  className={styles.box}>
-            <Link to="/"><div className={styles.boxleft}>Lab</div></Link> {/*/是首页导航 */}
+            <Link to="/"><div className={styles.boxleft}>Home</div></Link> {/*/是首页导航 */}
             <div className={styles.boxright}>
               <Link to="/about" ><p className={location.pathname==="/about"?styles.selected:null}>ABOUT</p></Link>
               <Link to="/works" ><p className={location.pathname==="/works"?styles.selected:null}>WORKS</p></Link>
+              <Link to="/photo_gallery" ><p className={location.pathname==="/photo_gallery"?styles.selected:null}>GALLERY</p></Link>
             </div>
 
           </div>
@@ -34,6 +36,7 @@ class App extends Component {
           <Route path = '/' exact component = {HomePage}/>
           <Route path = '/about' exact component = {AboutPage}/>
           <Route path = '/works' exact component = {WorkPage}/>
+          <Route path = '/photo_gallery' exact component = {PhotoPage}/>
           <Route path = '/works/:id' exact component = {WorkPageDetail}/>
 
         </section>
