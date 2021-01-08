@@ -25,6 +25,21 @@ export default ()=>{
             
         </section>
 
+
+
+
+         {/**关于我 */}
+         <section className={styles.about}>
+            <div className={styles.title}>
+                <h3>About Me</h3>
+            </div>
+            <p>Hi! I am a sophomore at the University of California, Los Angeles (UCLA)
+                     majoring in B.S. Cognitive Science. </p>
+            <p>I love data, web development, and dancing!</p>
+            
+        </section>
+
+        
         {/*作品 */}
         <section className={styles.work}>
             <div  className={styles.title}>

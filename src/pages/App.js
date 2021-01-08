@@ -1,11 +1,9 @@
 import React, { Component} from 'react';
-import logo from './logo.svg';
 import styles from './App.module.scss';
 import { Link, Route, withRouter} from 'react-router-dom'
 import HomePage from './HomePage'
 import WorkPage from './WorkPage'
 import WorkPageDetail from './WorkPageDetail'
-import WorkLists from '../components/WorkList'
 import AboutPage from './aboutpage'
 
 
