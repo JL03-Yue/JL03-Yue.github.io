@@ -12,25 +12,24 @@ export default ()=>{
             <h2>Annie Li</h2>
             <ul>
                 <li>
-                    Love to dance
+                    Cognitive Science Major
                 </li>
                 <li>
-                    Eat
+                Research Assistant Intern
                 </li>
                 <li>
-                    Sleep
+                Love to dance
                 </li>
             </ul>
-            <p>sentence 1</p>
-            <p>sentence 2</p>
-            <p>sentence 3</p>
+            <p>Hi! Nice to meet you!</p>
+            
         </section>
 
         {/*作品 */}
         <section className={styles.work}>
             <div  className={styles.title}>
-                <h3>my work</h3>
-                <p>a list of my work</p>
+                <h3>A Selection of Work</h3>
+                <p>You can find more in the work overview.</p>
                 
             </div>
             <WorkList dataSource = {worksData.data}/>
