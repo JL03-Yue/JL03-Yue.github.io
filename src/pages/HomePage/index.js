@@ -39,7 +39,7 @@ export default ()=>{
             <div className={styles.title}>
                 <h3>About Me</h3>
             </div>
-            <p>Hi! I am a sophomore at the University of California, Los Angeles (UCLA)
+            <p>Hi! I am a student at the University of California, Los Angeles (UCLA)
                      majoring in B.S. Cognitive Science. </p>
             <p>I love data, web development, and dancing!</p>
             
