@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import styles from '../photopage/photo.module.scss'
-import Images from '../../components/gallery/title'
+import Images from '../../components/gallery'
 
 export default ()=>{
     
