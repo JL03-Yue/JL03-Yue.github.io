@@ -22,8 +22,11 @@ class Image extends Component{
                 "https://github.com/JL03-Yue/JL03-Yue.github.io/blob/master/src/assets/gallery/WeChat%20Image_20210112154957.jpg?raw=true",
                 "https://github.com/JL03-Yue/JL03-Yue.github.io/blob/master/src/assets/gallery/WeChat%20Image_20210112155112.jpg?raw=true",
                 "https://github.com/JL03-Yue/JL03-Yue.github.io/blob/master/src/assets/gallery/WeChat%20Image_20210112155313.jpg?raw=true",
-                "https://github.com/JL03-Yue/JL03-Yue.github.io/blob/master/src/assets/gallery/one.jpg?raw=true"
-                
+                "https://github.com/JL03-Yue/JL03-Yue.github.io/blob/master/src/assets/gallery/one.jpg?raw=true",
+                "https://github.com/JL03-Yue/JL03-Yue.github.io/blob/master/src/assets/gallery/WeChat%20Image_20210112173428.jpg?raw=true",
+                "https://github.com/JL03-Yue/JL03-Yue.github.io/blob/master/src/assets/gallery/WeChat%20Image_20210112173438.jpg?raw=true",
+                "https://github.com/JL03-Yue/JL03-Yue.github.io/blob/master/src/assets/gallery/WeChat%20Image_20210112173443.jpg?raw=true"
+
             ],
             showModal:false,
             popImagesUrl:""
