@@ -1,6 +1,7 @@
 import React, { Component} from 'react';
 import styles from "./gallery.module.scss"
-import Popup from "./popup"
+import Popup from "./popup.js"
+import one from '../../assets/gallery/one.jpg'
 
 class Image extends Component{
     constructor(props){
@@ -13,8 +14,8 @@ class Image extends Component{
                 "https://images.unsplash.com/photo-1535005410886-12b3caf12112?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHw%3D&auto=format&fit=crop&w=600&q=60",
                 "https://images.unsplash.com/photo-1564612123322-ec11b6e1930a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=600&q=60",
                 "https://images.unsplash.com/photo-1564665872710-7cce69129b0e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHw%3D&auto=format&fit=crop&w=600&q=60",
-                "https://images.unsplash.com/photo-1564415637254-92c66292cd64?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=600&q=60"
-           
+                "https://images.unsplash.com/photo-1564415637254-92c66292cd64?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=600&q=60",
+                {one}
            
             ],
             showModal:false,
@@ -22,6 +23,7 @@ class Image extends Component{
         };
     }
 
+  
     imageSubmitter = (e) =>{
         e.preventDefault();
         let imageUrlArray = this.state.imageUrlArray;
@@ -37,6 +39,7 @@ class Image extends Component{
             imageUrl:e.target.value
         })
     }
+
 
     handlePopup=(url)=>{
         this.setState({
@@ -60,7 +63,7 @@ class Image extends Component{
         })
         return(
             <div className={styles.Images}>
-                <form onSubmit={this.imageSubmitter}>
+               {/* <form onSubmit={this.imageSubmitter}>
                     <input
                         types="text"
                         placeholder='plzinsert image url'
@@ -70,6 +73,7 @@ class Image extends Component{
                         submit image
                     </button>
                 </form>
+                */}
 
                 {images}
 
