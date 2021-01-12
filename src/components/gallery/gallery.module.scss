@@ -1,31 +1,51 @@
 .Images{
     display:flex;
     flex-wrap:wrap;
-    flex-direction: row;
+    flex-direction: column;
     align-items:center;
     justify-content:center;
     align-content:flex-start;
     margin: 0px auto;
+    max-height: 1500px;
 
-    padding-top: 90px;
+    padding-top: 30px;
     padding-bottom: 10px;
 
 }
 
-.singleImage{
-    padding:0 20px 20px;
-    height:200px;
-    border-radius: 34;
+.title{
+    font-size: large;
+    font-family:sans-serif;
+    padding-top:50px;
+    padding-bottom:80px;
+
 }
 
-.singleImage:hover{
-    padding: 5px;
-    /* opacity: .5; */
-    transition: 0.9s;
-    transform: scale(
-      1.24
-    ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+.allImage{
+    /*column-count: 3;
+    column-gap: 15px;
+    column-fill: auto;*/
+
+    .singleImage{
+    
+        padding:0 20px 20px;
+        width:250px;
+        border-radius: 34;  
+     
+    }
+    
+    
+    
+    .singleImage:hover{
+        padding: 5px;
+        /* opacity: .5; */
+        transition: 0.9s;
+        transform: scale(
+          1.24
+        ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
 }
+
 
 .popupParent {
     position: fixed;
