@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8884e023.css",
+    "main.js": "/static/js/main.06fe30ff.js",
+    "static/js/422.01c1d740.chunk.js": "/static/js/422.01c1d740.chunk.js",
+    "static/media/left1.jpg": "/static/media/left1.f566c42e39fc333106f6.jpg",
+    "static/media/half2.jpg": "/static/media/half2.f466a03f940fd8f57581.jpg",
+    "static/media/Qingyang_Annie_Li_Resume_SWE.docx.pdf": "/static/media/Qingyang_Annie_Li_Resume_SWE.docx.a455579035025ab3eb97.pdf",
+    "static/media/head1.jpg": "/static/media/head1.eda2195d4b7712607818.jpg",
+    "index.html": "/index.html",
+    "main.8884e023.css.map": "/static/css/main.8884e023.css.map",
+    "main.06fe30ff.js.map": "/static/js/main.06fe30ff.js.map",
+    "422.01c1d740.chunk.js.map": "/static/js/422.01c1d740.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8884e023.css",
+    "static/js/main.06fe30ff.js"
+  ]
+}
