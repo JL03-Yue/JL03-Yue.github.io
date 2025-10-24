@@ -5,8 +5,6 @@ class Title extends Component{
     render(){
         return(
             <div className={styles.title}>
-                
-                <b>Gallery</b>
             </div>
         );
     }

@@ -1,75 +1,50 @@
-.App {
-  text-align: center;
-  display:flex; /*弹性布局*/
-  min-height:100vh; /*100% visible height*/
+.App{
+  display:flex;
   flex-direction:column;
-  .content{
-    flex:1; /*content fill, header and footer adjust*/
-  }
+  min-height:100vh;
 
   .header{
-    background-color: rgb(250, 250, 250);
-    height: 60px;
-
-    .selected{
-      color: #333!important;
-      padding-bottom: 5px;
-      border-bottom: 1.5px solid #333; /*下划线*/
-      
-    }
+    background: var(--light-blue);
+    height:76px;
+    display:flex;
+    align-items:center;
+    border-bottom: 1px solid rgba(102,122,140,0.06);
 
     .box{
-      width: 70%;
-      height: 100%;
-      margin: 0px auto;
-      padding: 0px 12px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      a:hover { 
-        text-decoration:none; 
-        
-      }
-      .boxleft{
-        font-size: 20px;
-        color: rgb(43, 42, 42);
-        
-      }
-      .boxleft::after {
-        content: "";
-        margin-left: 0.5em;
-        
-      }
-      .boxright{
-        display: inline-flex;
-        justify-content: flex-start;
-        :hover{
-          color:lightgrey;
-        }
-        p{
-          margin: 0px 10px;
-          font-size: 14px;
-          color: rgb(102, 102, 102);
-        }
+      width:100%;
+      max-width:var(--max-width);
+      margin:0 auto;
+      padding:0 16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
 
-      }
-      div{
-        cursor: pointer;
-      }
+  .boxleft{font-weight:600;color:var(--text);font-size:20px}
+
+  .boxright{display:flex;gap:22px;align-items:center}
+  .boxright p{font-size:17px;font-weight:500}
+
+      a{color:var(--muted);text-decoration:none}
+      a:hover{color:var(--blue)}
+
+      .selected{color:var(--text);border-bottom:2px solid var(--blue);padding-bottom:4px}
     }
   }
-   
+
+  .content{flex:1;max-width:var(--max-width);margin:24px auto;padding:0 16px}
+
   .footer{
-    text-align: center; /*不要在外层添加样式*/
-    padding:50px 0px;
-    color: #555555;
-    background: #fafafa;
-    border-top:1px solid #f2f2f2;
-   
+    background:transparent;
+    text-align:center;
+    padding:10px 16px; /* slimmer bar */
+    color:var(--muted);
+    border-top:1px solid rgba(10,20,30,0.04);
+
     p{
-      padding:2px 0px;
+      max-width:var(--max-width);
+      margin:0 auto;
+      padding:6px 0;
     }
   }
-
 }
 

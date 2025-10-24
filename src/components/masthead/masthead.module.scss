@@ -1,18 +1,12 @@
 .masthead{
-    justify-content: space-between;
-    padding-top: 15px;
-    a{
-        img{
-            width: 30px;
-            border-radius: 5px;
-            margin:0 10px;
-            opacity:0.5;
-            
-        }  
-        
-        img:hover{
-            opacity:0.3;
-        }
-    }     
-            
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  padding-top:8px;
+
+  a{margin-left:10px}
+
+  img{width:44px;border-radius:8px;opacity:0.85;transition:opacity .18s ease,transform .18s ease}
+  img:hover{opacity:1;transform:translateY(-3px)}
+
 }

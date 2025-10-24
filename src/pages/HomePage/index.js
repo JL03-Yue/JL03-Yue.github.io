@@ -7,46 +7,34 @@ import Masthead from '../../components/masthead'
 
 export default ()=>{
     return <div className={styles.wrap}>
-        {/*个人简介 */}
         <section className = {styles.brief}>
             <img src={half}/>
-            <h2>Annie Li</h2>
             <ul>
-                <li>
-                    Cognitive Science Major
-                </li>
-                <li>
-                Research Assistant Intern
-                </li>
-                <li>
-                Love to dance
-                </li>
             </ul>
             
             
         </section>
 
-        {/*链接 */}
-        <section className={styles.masthead}>
+       
+
+
+         <section className={styles.about}>
+            <div className={styles.title}>
+                <h3> <b>Hi, I'm Annie (Qingyang) Li</b></h3>
+            </div>
+            <p><b>I am a Software Engineer II at Netflix, working in developer productivity. I'm generally intersted in AI agents and developer experience </b></p>
+            <p>Previously, I worked as a Software Engineer at Microsoft in .NET & VSCode and Azure Compute. </p>
+            <p>I received B.S. in Computer Science from UCLA with Summa Cum Laude.</p>
+
+            
+        </section>
+
+         <section className={styles.masthead}>
             
             <Masthead/>
 
         </section>
-
-
-         {/**关于我 */}
-         <section className={styles.about}>
-            <div className={styles.title}>
-                <h3>About Me</h3>
-            </div>
-            <p>Hi! I am a student at the University of California, Los Angeles (UCLA)
-                     majoring in B.S. Cognitive Science. </p>
-            <p>I love data, web development, and dancing!</p>
-            
-        </section>
-
-
-        {/*作品 */}
+{/* 
         <section className={styles.work}>
             <div  className={styles.title}>
                 <h3>A Selection of Work</h3>
@@ -55,7 +43,7 @@ export default ()=>{
             </div>
             <WorkList dataSource = {worksData.data}/>
 
-        </section>
+        </section> */}
 
 
 

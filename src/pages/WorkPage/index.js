@@ -6,9 +6,7 @@ import datas from '../WorkPageDetail/works.json'
 export default ()=>{
     return <div className ={styles.wrap}>
         <div  className={styles.title}>
-                <h3>my work</h3>
-                <p>a collection of my work</p>
-                
+                <h3><b>Work Experience</b></h3>
             </div>
         <WorkLists dataSource = {datas.data}/>
 
