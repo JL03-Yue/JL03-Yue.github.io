@@ -18,7 +18,7 @@ class App extends Component {
             <Link to="/"><div className={styles.boxleft}><b>Home</b></div></Link>
 
             <div className={styles.boxright}>
-              <Link to="/about" ><p className={location.pathname === "/about" ? styles.selected : null}><b>Resume</b></p></Link>
+              <a href={require('../assets/Qingyang_Annie_Li_Resume_SWE.docx.pdf')}><p><b>Resume</b></p></a>
               <Link to="/works" ><p className={location.pathname === "/works" ? styles.selected : null}><b>Work Experience</b></p></Link>
               <Link to="/photo_gallery" ><p className={location.pathname === "/photo_gallery" ? styles.selected : null}><b>Gallery</b></p></Link>
             </div>

@@ -7,34 +7,28 @@ export default ({dataSource})=>{
        <ul>
            {
                dataSource && dataSource.map(item=>
-                <li>
-                    <Link to={'/works/${item.id}'}>
+                <li key={item.id}>
+                    <Link to={`/works/${item.id}`}>
                         <div className = {styles.cover}>
-                            <img src={item.cover}/>
+                            <img src={item.cover} alt={item.title}/>
                         </div>
 
                         <div className = {styles.workbrief}>
-                            <h3>
-                                {item.title}
-                            </h3>
-                            <p>
-                                {item.brief}
-                            </p>
-
-                            <div className = {styles.tag}>
-                                {item.tags && item.tags.map(i=><span key ={i}>{i}</span>)}
+                            <h3>{item.title}</h3>
+                            
+                            <div className={styles.role}>{item.role}</div>
+                            
+                            <div className={styles.metadata}>
+                                <span className={styles.dates}>{item.dates}</span>
+                                <span className={styles.location}>{item.location}</span>
                             </div>
-                        </div>
 
-                        
+                            <p className={styles.description}>{item.brief}</p>
+                        </div>
                     </Link>
                 </li>
                 )
            }
        </ul>
-
-
-
-
     </div>
 }
